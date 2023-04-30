@@ -8,6 +8,6 @@ RUN python3.10 -m pip install --upgrade pip
 RUN  python3.10 -m pip install --no-cache-dir -r requirements.txt
 
 COPY src .
-COPY localization ..
+COPY localization ../localization
 
 CMD python3.10 -m discord_bot
